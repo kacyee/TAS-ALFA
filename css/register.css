@@ -1,0 +1,197 @@
+#particles-js{ 
+	position:absolute; 
+	width: 100%;
+	height: 100%;
+	background-color: #b61924;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%; 
+}
+
+.container {
+    padding-top: 10%;
+    min-width: 425px;
+}
+
+.registerHeader{
+    width: 100%;
+    height: 100px;
+}
+
+.elementsOnRegisterHeader {
+    background-color: #f4c741;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    color: black;
+}
+
+.elementsOnRegisterHeader h3 {
+    padding-top: 10%;
+}
+
+.elementsOnRegisterHeader .avatar {
+    position: relative;
+    top: 0%;
+    left: -5%;
+    width: 30%;
+    float: left;
+    z-index: 2;
+	user-select: none;
+}
+
+
+.registerMain{
+    width: 100%;
+    min-height: 225px;
+}
+
+.elementsOnRegisterMain {
+    position: relative;
+    background-color: #f9fbff;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 30px; 
+    padding-left: 30px;
+}
+
+.elementsOnRegisterMain .inputmain{
+    position: relative;
+}
+
+.elementsOnRegisterMain .inputmain .form-control, .elementsOnRegisterMain .inputmain .form-control:focus{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.elementsOnRegisterMain .inputmain input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-radius: 0%;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    outline: none;
+}
+
+.elementsOnRegisterMain .inputmain label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: darkgrey;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.elementsOnRegisterMain .inputmain input:focus ~ label,
+.elementsOnRegisterMain .inputmain input:valid ~ label {
+    top: -26px;
+    color: #f4c741;
+    font-size: 12px;
+}
+
+.elementsOnRegisterMain .tologin {
+    text-align: right;
+}
+
+.elementsOnRegisterMain .tologin a:link {
+    color: black; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+.elementsOnRegisterMain .tologin a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.registerFooter {
+    width: 100%;
+}
+
+.elementsOnRegisterFooter {
+    background-color: #e8ebef;
+    border-top: 2px solid light gray;
+    padding-bottom: 10px;
+    padding-right: 30px; 
+    padding-left: 30px;
+}
+
+.button2 {
+    background-color: #f4c242;
+    border: 1px solid orangered;
+    border-radius: 6px;
+    color: gray;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+.button2:hover {
+    background-color: #f4b241;
+    color: white;
+}
+
+.box {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    border-radius: 6px;
+    margin-bottom: auto;
+    font-size: 15px;
+    user-select: none;
+}
+
+.box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.box:hover input ~ .checkmark {
+  background-color: white;
+}
+
+.box input:checked ~ .checkmark {
+  background-color: white;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.box input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.box .checkmark:after {
+    left: 5px;
+    bottom: 0px;
+    width: 10px;
+    height: 25px;
+    border: solid #00a5c6;
+    border-width: 0 5px 4px 0;
+    transform: rotate(45deg);
+}
